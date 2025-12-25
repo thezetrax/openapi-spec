@@ -1,7 +1,7 @@
 import { ApiReferenceReact } from "@scalar/api-reference-react";
 import "@scalar/api-reference-react/style.css";
 
-const specPath = "./spec/openapi.yaml";
+const specPath = "./dist/openapi.json";
 
 function App() {
   return (
