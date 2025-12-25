@@ -1,0 +1,19 @@
+openapi: "3.1.1"
+info:
+  title: "API Specification Template (TEST)"
+  description: |
+    API Specification Template with OpenAPI Spec 3.1.1 support.
+
+    # Resources
+
+    * https://github.com/scalar/scalar
+    * https://github.com/OAI/OpenAPI-Specification
+    * https://scalar.com
+  version: "0.0.1"
+
+servers:
+  - url: http://localhost:80
+
+paths:
+  /users:
+    $ref: ./paths/users.yaml
