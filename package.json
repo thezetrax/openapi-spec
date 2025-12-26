@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build-spec": "swagger-cli bundle spec/openapi.yaml -o dist/openapi.json",
-    "mock-spec": "npm run build-spec && prism mock ./dist/openapi.json"
+    "mock-spec": "npm run build-spec && prism mock ./dist/openapi.json",
+    "test-spec": "dredd ./dist/openapi.json http://localhost:80"
   },
   "dependencies": {
     "@scalar/api-reference-react": "^0.8.15",

@@ -5,4 +5,4 @@ server-side platform.
 
 ## Requirements
 
-- Schemathesis needs to be installed on your system.
+- [Schemathesis](https://github.com/schemathesis/schemathesis) needs to be installed on your system.
