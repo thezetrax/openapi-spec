@@ -1,0 +1,25 @@
+Post:
+  type: object
+  properties:
+    id:
+      type: integer
+      format: int64
+    title:
+    content:
+      type: string
+    authorId:
+      type: integer
+      format: int64
+    createdAt:
+      type: string
+      format: date-time
+    updatedAt:
+      type: string
+      format: date-time
+  required:
+    - id
+    - title
+    - content
+    - authorId
+    - createdAt
+    - updatedAt

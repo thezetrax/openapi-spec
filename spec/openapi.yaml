@@ -17,3 +17,10 @@ servers:
 paths:
   /users:
     $ref: ./paths/users.yaml
+  /posts:
+    $ref: ./paths/posts.yaml
+
+components:
+  schemas:
+    Post:
+      $ref: ./components/schemas/post.yaml

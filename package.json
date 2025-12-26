@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-spec": "swagger-cli bundle spec/openapi.yaml -o dist/openapi.json"
+    "build-spec": "swagger-cli bundle spec/openapi.yaml -o dist/openapi.json",
+    "mock-spec": "npm run build-spec && prism mock ./dist/openapi.json"
   },
   "dependencies": {
     "@scalar/api-reference-react": "^0.8.15",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@stoplight/prism-cli": "^5.14.2",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
