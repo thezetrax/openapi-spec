@@ -4,13 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "build-spec": "swagger-cli bundle spec/openapi.yaml -o dist/openapi.json",
-    "mock-spec": "npm run build-spec && prism mock ./dist/openapi.json",
-    "test-spec": "dredd ./dist/openapi.json http://localhost:80"
+    "dev": "swagger-cli bundle spec/openapi.yaml -o dist/openapi.json",
+    "mock": "npm run build-spec && prism mock ./dist/openapi.json",
+    "test": "schemathesis run ./dist/openapi.json --url http://localhost:80"
   },
   "dependencies": {
     "@scalar/api-reference-react": "^0.8.15",
